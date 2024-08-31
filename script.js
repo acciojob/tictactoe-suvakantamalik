@@ -60,7 +60,11 @@ document.getElementById("submit").addEventListener("click", function () {
     }
   };
   const showWinner = (winner) => {
-    messageBox.innerText = `${player1}, congratulations you won!`;
+	if (winner === "O") {
+      messageBox.innerText = `${player1}, congratulations you won!`;
+    } else {
+      messageBox.innerText = `${player2}, congratulations you won!`;
+    }
     messageDiv.appendChild(messageBox);
 
     disable();
