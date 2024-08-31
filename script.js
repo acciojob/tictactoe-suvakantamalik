@@ -89,7 +89,7 @@ document.getElementById("submit").addEventListener("click", function () {
           pos1Val.style.backgroundColor = "#700c82";
           pos2Val.style.backgroundColor = "#700c82";
           pos3Val.style.backgroundColor = "#700c82";
-          showWinner(pos1Val);
+          showWinner(pos1Val.innerText);
         }
       }
     }
